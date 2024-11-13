@@ -1,0 +1,16 @@
+//colors that are used across the webpage----start
+$primary-red-color : hsl(0deg, 93%, 64%);
+$primary-color-black : hsl(240deg, 14%, 11%);
+$white-color : hsl(0deg, 0%, 100%);
+$text-color-black : hsl(0deg, 0%, 0%);
+////colors that are used across the webpage----end
+$font-family-primary : "Commissioner";
+
+//button properties -----------start
+$red-btn-height : 72px;
+$black-btn-height : 64px;
+$red-btn-color : $red-color;
+$black-btn-color : $primary-color-black;
+$black-btn-hover : #434356;
+$red-btn-hover :  #FF9393;
+//button properties -----------end
