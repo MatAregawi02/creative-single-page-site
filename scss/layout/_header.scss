@@ -1,0 +1,38 @@
+@use '../base/variables';
+@use '../base/mixins';
+
+header{
+   
+    display : flex;
+    gap : 409px;
+   
+}
+ul{
+    width : 705px;
+    height : 178px;
+    
+    list-style: none;
+     display : flex;
+     background-color: variables.$primary-red-color;
+     padding-top: 73px;
+     padding-bottom: 73px;
+     padding-left: 69px;
+
+     a{
+        text-decoration: none; //removes underline
+       
+     }
+
+     .nav-link{
+        @include mixins.nav-link-btns(400,700);
+        margin-right: 32px;
+     }
+   
+}
+.logo{
+    width : 161px;
+    height : 30px;
+    background-color: yellow;
+    margin-left: 165px;
+    margin-top: 76px;
+}
