@@ -2,10 +2,11 @@
 @use '../base/mixins';
 .nav-btn{
     @include mixins.nav-link-btns(800,800);
+    @include mixins.button($btn-display : inline-block, $btn-width : 199px, $btn-bg-color : #191921 , $btn-height : 64px, $font-size : 16px, $text-color : #fff, $hover-bg : #434356 );
     width : 199px;
     height : 64px;
     margin-left: 17px;
-    background-color: variables.$black-btn-color;
+    // background-color: variables.$black-btn-color;
     margin-top: -17px; //padding top of the parent - margin of the child(offset reset)
     // padding : 23px 21px 41px 45px;
    

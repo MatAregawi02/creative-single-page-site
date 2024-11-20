@@ -10,7 +10,7 @@ header{
 ul{
     width : 705px;
     height : 178px;
-    
+    // border : 1px solid black;
     list-style: none;
      display : flex;
      background-color: variables.$primary-red-color;
@@ -24,7 +24,7 @@ ul{
      }
 
      .nav-link{
-        @include mixins.nav-link-btns(400,700);
+        @include mixins.nav-link-btns(16px, 400,700);
         margin-right: 32px;
      }
    
@@ -32,7 +32,6 @@ ul{
 .logo{
     width : 161px;
     height : 30px;
- 
     margin-left: 165px;
     margin-top: 76px;
 }

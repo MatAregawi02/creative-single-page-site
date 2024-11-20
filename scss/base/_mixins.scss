@@ -5,7 +5,7 @@
     width : $btn-width;
     height : $btn-height;
     color : $text-color;
-    $background-color : $btn-bg-color;
+    background-color : $btn-bg-color;
     // color: $btn-color;
     font-family: Commissioner;
     font-size: $font-size;
@@ -15,13 +15,14 @@
 
     &:hover{
         background-color: $hover-bg;
+        cursor : pointer;
     }
 }
 
-@mixin nav-link-btns($initial-font-weight, $hover-font-weight : 700){
+@mixin nav-link-btns($font-size: 16px, $initial-font-weight, $hover-font-weight : 700){
     color: #FFF;
     font-family: Commissioner;
-    font-size: 16px;
+    font-size: $font-size;
     font-style: normal;
     font-weight: $initial-font-weight;
     line-height: 32px; /* 200% */

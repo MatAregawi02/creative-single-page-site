@@ -1,0 +1,50 @@
+@use '../base/variables';
+@use '../base/mixins';
+
+@media (max-width : 768px) {
+   //header-------------------start
+   header{
+   
+    display : flex;
+    gap : 130px;
+   
+}
+ul{
+    width : 438px;
+    height : 178px;
+    
+    list-style: none;
+     display : flex;
+    //  background-color: variables.$primary-red-color;
+     padding-top: 73px;
+     padding-bottom: 73px;
+     padding-left: 33px;
+
+    
+
+     .nav-link{
+        @include mixins.nav-link-btns(15px,400,700);
+        margin-right: 20px;
+     }
+   
+}
+.logo{
+    width : 161px;
+    height : 30px;
+    margin-left: 39px;
+    margin-top: 74px;
+    margin-bottom: 74px;
+}
+//the nav btn----start
+.nav-btn{
+    @include mixins.nav-link-btns(800,800);
+    width : 147px;
+    height : 64px;
+    margin-left: 8px; //margin right of the last nav link + 8px = 28px (desired margin)
+    background-color: variables.$black-btn-color;
+    margin-top: -17px; //padding top of the parent - margin of the child(offset reset)
+    // padding : 23px 21px 41px 45px;
+   
+ }
+//the nav btn ------end
+}
