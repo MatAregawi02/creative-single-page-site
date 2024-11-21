@@ -5,7 +5,8 @@ header{
    
     display : flex;
     gap : 409px;
-   
+    position : relative;
+    border : 1px solid black;
 }
 ul{
     width : 705px;
@@ -35,3 +36,12 @@ ul{
     margin-left: 165px;
     margin-top: 76px;
 }
+.mobile-nav-icons{
+    display : none;
+} //for desktops, mobile navigation should not be visible
+// .hamburger-icon{
+//     display : none;
+// }
+// .cross-icon {
+//     display :  none;
+// }
