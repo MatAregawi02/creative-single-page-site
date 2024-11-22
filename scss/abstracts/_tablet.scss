@@ -50,4 +50,47 @@ ul{
 .mobile-nav-icons{
     display : none; //for tablet, we don't need mobile navigation icons
 }
+//header-----------------end
+
+//hero----------------start
+.hero{
+    // border : 1px solid black; //border makes margin work
+   
+    background-image: url('/assets/tablet/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    height : 606px;
+    padding-top: 77px;
+    padding-left: 39px;
+}
+.hero-title-box{
+   
+    width: 398px;
+    height: 181px;
+    h1{
+      font-size: 56px;
+    line-height: 56px; /* 110% */
+    }
+    // margin-left: 165px;
+}
+.hero-paragraph-box{
+   
+    width : 398px;
+    margin-top: 39px;
+    
+    p.hero-paragraph{
+       font-size: 15px;
+       line-height: 25px; /* 177.778% */
+    }
+   
+}
+
+.hero-btn{
+    border : none;
+    margin-top: 32px;
+    
+}
+.mobile-hero-img{
+    display : none;
+}
 }

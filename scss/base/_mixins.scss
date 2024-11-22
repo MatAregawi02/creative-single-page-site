@@ -15,7 +15,7 @@
 
     &:hover{
         background-color: $hover-bg;
-       
+        cursor: pointer;
     }
 }
 
@@ -33,16 +33,16 @@
         cursor: pointer;
     }
 }
-@mixin section-headings($text-container-width : 445px, $text-container-height : 192px, $text-color : #000, ){
-    width : $text-container-width;
-    height : $text-container-height;
-    color: #000;
-    font-family: Commissioner;
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 64px; /* 110% */
-}
+// @mixin section-headings($text-container-width : 445px, $text-container-height : 192px, $text-color : #000){
+//     width : $text-container-width;
+//     height : $text-container-height;
+//     color: $text-color;
+//     font-family: Commissioner;
+//     font-size: 56px;
+//     font-style: normal;
+//     font-weight: 800;
+//     line-height: 64px; /* 110% */
+// }
 
 @mixin all-paragraphs($text-container-width : 540px, $text-color : #000){
     width : $text-container-width;
