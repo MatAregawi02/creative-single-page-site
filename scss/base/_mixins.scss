@@ -15,12 +15,13 @@
 
     &:hover{
         background-color: $hover-bg;
-        cursor : pointer;
+       
     }
 }
 
 @mixin nav-link-btns($font-size: 16px, $initial-font-weight, $hover-font-weight : 700){
     color: #FFF;
+    text-align: center;
     font-family: Commissioner;
     font-size: $font-size;
     font-style: normal;
@@ -29,6 +30,7 @@
 
     &:hover{
         font-weight: $hover-font-weight;
+        cursor: pointer;
     }
 }
 @mixin section-headings($text-container-width : 445px, $text-container-height : 192px, $text-color : #000, ){

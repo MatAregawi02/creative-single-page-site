@@ -20,7 +20,6 @@ header {
   display: flex;
   gap: 409px;
   position: relative;
-  border: 1px solid black;
 }
 
 ul {
@@ -38,6 +37,7 @@ ul a {
 }
 ul .nav-link {
   color: #FFF;
+  text-align: center;
   font-family: Commissioner;
   font-size: 16px;
   font-style: normal;
@@ -47,6 +47,7 @@ ul .nav-link {
 }
 ul .nav-link:hover {
   font-weight: 700;
+  cursor: pointer;
 }
 
 .logo {
@@ -78,7 +79,6 @@ ul .nav-link:hover {
 }
 .nav-btn:hover {
   background-color: #434356;
-  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -97,6 +97,7 @@ ul .nav-link:hover {
   }
   ul .nav-link {
     color: #FFF;
+    text-align: center;
     font-family: Commissioner;
     font-size: 15px;
     font-style: normal;
@@ -106,6 +107,7 @@ ul .nav-link:hover {
   }
   ul .nav-link:hover {
     font-weight: 700;
+    cursor: pointer;
   }
   .logo {
     width: 161px;
@@ -116,6 +118,7 @@ ul .nav-link:hover {
   }
   .nav-btn {
     color: #FFF;
+    text-align: center;
     font-family: Commissioner;
     font-size: 800;
     font-style: normal;
@@ -129,6 +132,7 @@ ul .nav-link:hover {
   }
   .nav-btn:hover {
     font-weight: 700;
+    cursor: pointer;
   }
   .mobile-nav-icons {
     display: none;
@@ -165,6 +169,7 @@ ul .nav-link:hover {
     margin-right: 24px;
   }
   .menu-mobile {
+    padding: 0;
     position: absolute;
     display: inline-block;
     top: 110px;
@@ -173,6 +178,50 @@ ul .nav-link:hover {
     width: 252px;
     height: 292px;
     background-color: #191921;
-    border: 1px solid black;
+  }
+  li a {
+    display: inline-block;
+  }
+  li #about-link {
+    margin: 32px 100px 0px 100px;
+  }
+  li #service-link {
+    margin: 24px 96px 24px 96px;
+  }
+  li #project-link {
+    margin: 0px 92px 24px 92px;
+  }
+  .nav-link {
+    color: #FFF;
+    text-align: center;
+    font-family: Commissioner;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 200% */
+  }
+  .nav-link:hover {
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .nav-btn {
+    display: inline-block;
+    width: 199px;
+    height: 64px;
+    color: #fff;
+    background-color: #F94F4F;
+    font-family: Commissioner;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    width: 199px;
+    height: 64px;
+    margin-left: 27px;
+    margin-right: 26px;
+    margin-bottom: 28px;
+  }
+  .nav-btn:hover {
+    background-color: #434356;
   }
 }

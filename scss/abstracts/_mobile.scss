@@ -37,6 +37,8 @@
 //trial
 .menu-mobile{
 // display : flex;
+
+padding : 0; //resetting
 position : absolute;
 display: inline-block;
 top : 110px;
@@ -45,8 +47,44 @@ right : 26px;
 width : 252px;
 height : 292px;
 background-color: #191921;
-border : 1px solid black;
-}
 
+}
+li{
+    a{
+        display: inline-block; //a is an inline element by default
+    }
+  
+   #about-link{
+   
+    margin : 32px 100px 0px 100px;
+   }
+   #service-link{
+   
+    margin : 24px 96px 24px 96px;
+   }
+   #project-link{
+    
+    margin : 0px 92px 24px 92px;
+   }
+}
+.nav-link{
+    //typography of the navigation links
+    @include mixins.nav-link-btns(18px, 400,700);
+    
+   
+ }
+.nav-btn{
+    // @include mixins.nav-link-btns(800,800);
+    @include mixins.button($btn-display : inline-block, $btn-width : 199px, $btn-bg-color : #F94F4F  , $btn-height : 64px, $font-size : 16px, $text-color : #fff, $hover-bg : #434356 );
+    width : 199px;
+    height : 64px;
+    margin-left: 27px;
+    margin-right: 26px;
+    // background-color: variables.$black-btn-color;
+    // margin-top: 24px; //padding top of the parent - margin of the child(offset reset)
+    margin-bottom: 28px;
+    // padding : 23px 21px 41px 45px;
+   
+ }
 
 }
