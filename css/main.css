@@ -1,3 +1,25 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Commissioner", sans-serif;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
 h1 {
   color: #000;
   font-family: Commissioner;
@@ -16,22 +38,41 @@ p.hero-paragraph {
   line-height: 32px; /* 177.778% */
 }
 
-html {
-  box-sizing: border-box;
+.card-one .card-one-title {
+  color: #FFF;
+  font-family: Commissioner;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 64px; /* 110% */
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+.card-one span.red-highlighted-text {
+  color: #F94F4F;
 }
-
-body {
-  font-size: 1.6rem;
-  font-family: "Commissioner", sans-serif;
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
+.card-one .card-one-paragraph {
+  color: #FFF;
+  font-family: Commissioner;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+}
+.card-one .card-one-link a {
+  color: #F94F4F;
+  font-family: Commissioner;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.card-one .card-one-link a:hover {
+  color: #FF9393;
+}
+.card-one .card-one-link a:hover::after {
+  background-color: #FF9393;
+}
+.card-one .card-one-link a::after {
+  background-color: #F94F4F;
 }
 
 header {
@@ -105,6 +146,49 @@ ul .nav-link:hover {
 
 .mobile-hero-img {
   display: none;
+}
+
+section.section-one {
+  position: relative;
+  height: 984px;
+  background: url("/assets/desktop/image-strategic.jpg") lightgray 0px 0px/100% 100% no-repeat;
+  background-size: 735px 984px;
+}
+section.section-one .card-one {
+  background-color: #191921;
+  width: 705px;
+  height: 784px;
+  margin-left: 735px;
+  padding: 200px 141px 0px 154px;
+}
+section.section-one .card-one-title-box {
+  width: 410px;
+  height: 133px;
+}
+section.section-one .card-one-paragraph-box {
+  width: 445px;
+  margin-top: 43px;
+  margin-bottom: 48px;
+}
+section.section-one .card-one-link a {
+  position: relative;
+}
+section.section-one .card-one-link a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 2px;
+}
+section.section-one .red-wavy-image {
+  width: 135px;
+  height: 61px;
+  position: absolute;
+  left: 668px;
+  top: 234px;
+  right: 637px;
+  bottom: 489px;
 }
 
 .nav-btn {

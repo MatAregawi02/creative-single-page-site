@@ -1,3 +1,6 @@
+@use '../base/variables';
+@use '../base/mixins';
+
 //hero----------------start
 h1{
     color: #000;
@@ -16,3 +19,44 @@ p.hero-paragraph{
     line-height: 32px; /* 177.778% */
 }
 //hero-------------------end
+
+//section one -----------------------start
+.card-one{
+
+
+.card-one-title{
+   @include mixins.section-headings(#FFF);
+}
+span.red-highlighted-text{
+    color : #F94F4F;
+}
+.card-one-paragraph{
+    @include mixins.all-paragraphs(#FFF, 32px)
+}
+.card-one-link{
+   
+    a{
+      
+    color: #F94F4F;
+    font-family: Commissioner;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+   
+    &:hover{
+        color: #FF9393;
+    }
+    &:hover::after{
+        background-color: #FF9393;
+    }
+   
+    }
+    a::after{
+        background-color: #F94F4F;
+    }
+   
+   
+}
+}
+//section one ----------------------end 

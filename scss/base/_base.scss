@@ -9,6 +9,7 @@ html{
 }
 body{
     // background-color: variables.$red-color;
+    // border : 1px solid black;
     font-size: 1.6rem;
     font-family: 'Commissioner', sans-serif; //fall back font included
     width : 100%;
@@ -16,6 +17,8 @@ body{
     margin : 0 auto;
     
 }
-
+a{
+    text-decoration: none;
+}
 
 

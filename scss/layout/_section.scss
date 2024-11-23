@@ -1,6 +1,7 @@
 //first section is the hero
 @use '../base/variables';
 @use '../base/mixins';
+//hero-----------------------------start
 .hero{
     // border : 1px solid black; //border makes margin work
  
@@ -33,3 +34,67 @@
 .mobile-hero-img{
     display : none;
 }
+//hero-------------------------------------end
+
+//section one-----------------------------start
+
+// main{
+//     height : 984px;
+// }
+section.section-one{
+    position : relative;
+    height : 984px;
+   background: url('/assets/desktop/image-strategic.jpg') lightgray 0px 0px / 100% 100% no-repeat;
+    background-size: 735px 984px;
+    
+    .card-one{
+       
+        background-color: #191921 ;
+        width : 705px;
+        height : 784px;
+        margin-left: 735px;
+        padding: 200px 141px 0px 154px; //add margin top for the next element
+    }
+    .card-one-title-box{
+       
+        width : 410px;
+        height : 133px;
+        
+    }
+
+    .card-one-paragraph-box{
+        
+        width : 445px;
+        margin-top: 43px;
+        margin-bottom: 48px;
+    }
+    
+
+.card-one-link{
+    a {
+        
+        position: relative;     
+    }
+  
+    a::after {
+        content: '';      
+        position: absolute;    
+        left: 0;
+        bottom: -8px;          
+        width: 100%;           
+        height: 2px;           
+  }
+
+}
+.red-wavy-image{
+
+    width : 135px;
+    height : 61px;
+    position : absolute;
+    left : 668px;
+    top : 234px;
+    right : 637px;
+    bottom : 489px;
+}
+}
+//section one------------------------------end
