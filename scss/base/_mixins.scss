@@ -44,6 +44,15 @@
     line-height: 64px; /* 110% */
 }
 
+@mixin section-headings-tablet($text-color : #000){
+    color: $text-color;
+    font-family: Commissioner;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800; //doesn't change
+    line-height: 40px; /* 110% */
+}
+
 @mixin all-paragraphs($text-color : #000, $line-height : 32px){
     color: $text-color;
     font-family: Commissioner;

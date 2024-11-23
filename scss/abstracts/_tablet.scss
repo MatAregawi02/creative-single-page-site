@@ -93,4 +93,91 @@ ul{
 .mobile-hero-img{
     display : none;
 }
+//hero------------------------------------end
+
+//section one ---------------------------------start
+//layout----------------------------------start
+section.section-one{
+    position : relative;
+    height : 658px;
+    background: url('/assets/desktop/image-strategic.jpg') lightgray 0px 0px / 100% 100% no-repeat;
+    background-size: 378px 658px;
+    .section-one-mobile-image{
+        display : none; //we don't need to see this for tablet
+    }
+    .card-one{
+       
+       
+        width : 390px;
+        height : 538px;
+        margin-left: 378px;
+        padding: 120px 40px 0px 69px; //add margin top for the next element
+    }
+    .card-one-title-box{
+       
+        width : 281px;
+        height : 80px;
+        
+    }
+
+    .card-one-paragraph-box{
+        
+        width : 281px;
+        height : 125px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    
+
+.card-one-link{
+    a {
+        
+        position: relative;     
+    }
+  
+    a::after {
+        content: '';      
+        position: absolute;    
+        left: 0;
+        bottom: -9px;          
+        width: 100%;           
+        height: 2px;           
+  }
+
+}
+.red-wavy-image{
+
+    width : 63px;
+    height : 29px;
+    position : absolute;
+    left : 346px;
+    top : 145px;
+    right : 359px;
+    bottom : 484px;
+}
+}
+//layout-----------------------------------------end
+//typography-----------------------------------------start
+.card-one{
+
+
+    .card-one-title{
+       @include mixins.section-headings-tablet(#FFF);
+    }
+    // span.red-highlighted-text{
+    //     color : #F94F4F;
+    // }
+    .card-one-paragraph{
+        @include mixins.all-paragraphs(#FFF, 25px);
+        font-size : 15px;
+    }
+    .card-one-link{
+       
+        a{
+          font-size: 15px;
+        }
+    }
+} //don't delete this bracket
+//typography------------------------------------------end
+//section one -------------------------------------end
 }

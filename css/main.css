@@ -148,6 +148,10 @@ ul .nav-link:hover {
   display: none;
 }
 
+.section-one-mobile-image {
+  display: none;
+}
+
 section.section-one {
   position: relative;
   height: 984px;
@@ -317,6 +321,71 @@ section.section-one .red-wavy-image {
   .mobile-hero-img {
     display: none;
   }
+  section.section-one {
+    position: relative;
+    height: 658px;
+    background: url("/assets/desktop/image-strategic.jpg") lightgray 0px 0px/100% 100% no-repeat;
+    background-size: 378px 658px;
+  }
+  section.section-one .section-one-mobile-image {
+    display: none;
+  }
+  section.section-one .card-one {
+    width: 390px;
+    height: 538px;
+    margin-left: 378px;
+    padding: 120px 40px 0px 69px;
+  }
+  section.section-one .card-one-title-box {
+    width: 281px;
+    height: 80px;
+  }
+  section.section-one .card-one-paragraph-box {
+    width: 281px;
+    height: 125px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  section.section-one .card-one-link a {
+    position: relative;
+  }
+  section.section-one .card-one-link a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    width: 100%;
+    height: 2px;
+  }
+  section.section-one .red-wavy-image {
+    width: 63px;
+    height: 29px;
+    position: absolute;
+    left: 346px;
+    top: 145px;
+    right: 359px;
+    bottom: 484px;
+  }
+  .card-one .card-one-title {
+    color: #FFF;
+    font-family: Commissioner;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px; /* 110% */
+  }
+  .card-one .card-one-paragraph {
+    color: #FFF;
+    font-family: Commissioner;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 177.778% */
+    font-size: 15px;
+  }
+  .card-one .card-one-link a {
+    font-size: 15px;
+  }
 }
 @media (max-width: 375px) {
   ul {
@@ -434,5 +503,41 @@ section.section-one .red-wavy-image {
   }
   .hero-btn {
     margin-top: 40px;
+  }
+  section.section-one {
+    position: relative;
+    background: none;
+  }
+  section.section-one .section-one-mobile-image {
+    margin-top: 46px;
+    display: block;
+    width: 375px;
+    height: 200px;
+  }
+  section.section-one .card-one {
+    background-color: #191921;
+    width: 375px;
+    height: 377px;
+    margin-left: 0;
+    padding: 72px 24px 0px 24px;
+  }
+  section.section-one .card-one-title-box {
+    width: 327px;
+    height: 40px;
+  }
+  section.section-one .card-one-paragraph-box {
+    width: 327px;
+    height: 100px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
+  section.section-one .red-wavy-image {
+    width: 62px;
+    height: 29px;
+    position: absolute;
+    left: 24px;
+    top: 185px;
+    right: 637px;
+    bottom: 363px;
   }
 }

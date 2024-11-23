@@ -41,11 +41,16 @@
 // main{
 //     height : 984px;
 // }
+.section-one-mobile-image{
+    display : none;
+}
 section.section-one{
     position : relative;
     height : 984px;
    background: url('/assets/desktop/image-strategic.jpg') lightgray 0px 0px / 100% 100% no-repeat;
     background-size: 735px 984px;
+
+    
     
     .card-one{
        

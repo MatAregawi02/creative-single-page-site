@@ -98,7 +98,7 @@ li{
 }
 .hero{
     // border : 1px solid black; //border makes margin work
-  
+    
     background: none;
     width : 375px;
     height : 431px;
@@ -129,4 +129,61 @@ li{
     
 }
 //hero--------------------end
+
+//section one------------------------------start
+//layout-----------------------------start
+section.section-one{
+    
+    position : relative;
+    // height : 777px;
+    background: none;
+    
+
+    .section-one-mobile-image{
+        margin-top: 46px; //please revisit this, the margin might be off
+        display : block;
+        width : 375px;
+        height : 200px;
+    }
+    
+    .card-one{
+       
+        background-color: #191921 ;
+        width : 375px;
+        height : 377px;
+        margin-left: 0;
+        padding: 72px 24px 0px 24px; //add margin top for the next element
+    }
+    .card-one-title-box{
+        
+        width : 327px;
+        height : 40px;
+        
+    }
+
+    .card-one-paragraph-box{
+        
+        width : 327px;
+        height : 100px;
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+    
+
+
+.red-wavy-image{
+   
+    width : 62px;
+    height : 29px;
+    position : absolute;
+    left : 24px;
+    top : 185px;
+    right : 637px;
+    bottom : 363px;
+}
+}
+//layout-------------------------------end
+//typography---------------------------start
+//typograhy is not needed here because it is the same for mobile and tablet for section one
+//typography---------------------------end
 }
