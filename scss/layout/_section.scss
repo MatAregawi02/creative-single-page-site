@@ -103,3 +103,55 @@ section.section-one{
 }
 }
 //section one------------------------------end
+
+//section two-------------------------------start
+section.section-two{
+//I used position property because of the overlapping contents
+
+    display : flex;
+    position : relative;
+    .section-two-title-box{
+        position: absolute;
+        width : 540px;
+        height : 192px;
+        left: 165px;
+        top: 200px;
+        z-index : 2;
+    }
+
+.card-two{
+    background-color: #F94F4F;
+    position : absolute;
+    width : 895px;
+    height : 1100px;
+    padding: 200px 106px 0 285px; 
+    top: -200px;
+    left: 545px;
+    z-index : 0;
+    //}
+    .card-two-part-one,.card-two-part-two,.card-two-part-three{
+        width : 504px;
+        height : 196px;
+       
+    }
+    .card-two-part-one,.card-two-part-two{
+        margin-bottom: 56px;
+    }
+    .card-two-title-box{ //for all the title boxes in card two
+        width : 445px;
+        height : 32px;
+        margin-top: -44px;
+        margin-left: 59px;
+        margin-bottom: 24px;
+    
+    }
+    .card-two-paragraph-box{
+        width : 445px;
+        height : 96px;
+        margin-left: 59px;
+    }
+    
+   
+}
+}
+//section two--------------------------------------end

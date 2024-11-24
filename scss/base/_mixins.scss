@@ -61,10 +61,18 @@
     font-weight: 400;
     line-height: $line-height; /* 177.778% */
 }
+//card two mixin
+@mixin card-two-titles(){
+    color: #FFF;
+    font-family: Commissioner;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 32px; /* 160% */
+}
 
 
-
-@mixin low-contrast-numbers{
+@mixin low-contrast-numbers(){
     color: #FFF;
     font-family: Commissioner;
     font-size: 80px;

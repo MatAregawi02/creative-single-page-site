@@ -60,3 +60,26 @@ span.red-highlighted-text{
 }
 }
 //section one ----------------------end 
+
+//section two-----------------------start
+section.section-two{
+    .section-two-title-box{
+        h3{
+            @include mixins.section-headings(#000)
+        }
+       
+    }
+}
+.card-two{
+    .low-contrast-num{ //the low con numbers have all the same typography
+        @include mixins.low-contrast-numbers;
+    }
+    .card-two-title{ //for each heading in card two
+        @include mixins.card-two-titles;
+    }
+    .card-two-paragraph{ //for each paragraph in card two
+        @include mixins.all-paragraphs(#FFF,32px);
+    }
+    
+}
+//section two-----------------------end

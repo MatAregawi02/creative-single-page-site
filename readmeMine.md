@@ -1,6 +1,9 @@
 # things I learned, portfolio notes
 
 1) the use of mixins, nested elements, how to organize sass
+=> if a mixin has two many parameters, it's actually counterproductive to use it.
+=> if for three components, I have to adjust 6 parameters, what's the point?
+=> Example: take a look at your nav btn and other mixins...
 
 2) the important of modular and incremental development 
 
@@ -24,7 +27,9 @@ it ruined the entire layout
 5) I learned the importance of pseudoelements when working with underlined links that have to be highlighted when hovering...
 (how do we make it so that everything -the content and the line- gets hightlighted)?
 
-
+6) look into how to better incorporate media queries and responsiveness into your program
+(variables, importing,...)
+is there a much better way than just dumping everything into the three folders?
 ------------------------------------------------
 #####
 This code snippet had a problem
