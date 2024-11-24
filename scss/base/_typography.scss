@@ -75,10 +75,11 @@ section.section-two{
         @include mixins.low-contrast-numbers;
     }
     .card-two-title{ //for each heading in card two
-        @include mixins.card-two-titles;
+        @include mixins.card-two-titles(20px);
     }
     .card-two-paragraph{ //for each paragraph in card two
         @include mixins.all-paragraphs(#FFF,32px);
+      
     }
     
 }

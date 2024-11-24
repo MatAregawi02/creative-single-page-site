@@ -100,7 +100,8 @@ ul{
 section.section-one{
     position : relative;
     height : 658px;
-    background: url('/assets/desktop/image-strategic.jpg') lightgray 0px 0px / 100% 100% no-repeat;
+    //I had used a desktop background...changed it to desktop
+    background: url('/assets/tablet/image-strategic.jpg') lightgray 0px 0px / 100% 100% no-repeat;
     background-size: 378px 658px;
     .section-one-mobile-image{
         display : none; //we don't need to see this for tablet
@@ -184,9 +185,77 @@ section.section-one{
 
 //section two----------------------------------start
 //layout-------------------------------------start
-//section two-------------------------------start
-
-    //section two--------------------------------------end
+section.section-two{
+    //I used position property because of the overlapping contents
+    
+        display : flex;
+        position : relative;
+        .section-two-title-box{
+            position: absolute;
+            width : 281px;
+            height : 120px;
+            left: 39px;
+            top: 126px;
+            z-index : 0;
+        }
+    
+    .card-two{
+        background-color: #F94F4F;
+        position : absolute;
+        width : 438px;
+        height : 797px;
+        padding: 120px 40px 0 43px; 
+        top: -120px;
+        left: 330px;
+        z-index : 0;
+        //}
+        .card-two-part-one,.card-two-part-two,.card-two-part-three{
+            width : 355px;
+            height : 159px;
+           
+        }
+        .card-two-part-one,.card-two-part-two{
+            margin-bottom: 40px;
+        }
+        .card-two-title-box{ //for all the title boxes in card two
+            width : 334px;
+            height : 25px;
+            margin-top: -44px;
+            margin-left: 16px;
+            margin-bottom: 15px;
+        
+        }
+        .card-two-paragraph-box{
+            width : 339px;
+            height : 75px;
+            margin-left: 16px;
+            
+        }
+        
+       
+    }
+    }
 //layout--------------------------------------end
+//typography----------------------------------start
+section.section-two{
+    .section-two-title-box{
+        h3{
+            @include mixins.section-headings-tablet(#000) //for tablet
+        }
+       
+    }
+}
+.card-two{
+    
+    .card-two-title{ //for each heading in card two
+        @include mixins.card-two-titles(15px);
+    }
+    .card-two-paragraph{ //for each paragraph in card two
+        @include mixins.all-paragraphs(#FFF,25px);
+        font-size: 15px;
+    }
+    
+}
+//typography----------------------------------end
 //section two------------------------------------end
 }
