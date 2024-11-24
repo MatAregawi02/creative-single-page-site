@@ -649,6 +649,7 @@ section.section-two .card-two .card-two-paragraph-box {
   }
   section.section-one {
     position: relative;
+    height: 577px;
     background: none;
   }
   section.section-one .section-one-mobile-image {
@@ -682,5 +683,48 @@ section.section-two .card-two .card-two-paragraph-box {
     top: 185px;
     right: 637px;
     bottom: 363px;
+  }
+  section.section-two {
+    border: 1px solid black;
+    background-color: #F94F4F;
+    display: flex;
+    width: 375px;
+    height: 918px;
+    position: relative;
+  }
+  section.section-two .section-two-title-box {
+    position: absolute;
+    width: 327px;
+    height: 120px;
+    left: 24px;
+    top: 96px;
+    z-index: 1;
+  }
+  section.section-two .card-two {
+    position: absolute;
+    width: 375px;
+    height: 653px;
+    padding: 0px 24px 0 24px;
+    top: 265px;
+    left: 0;
+    z-index: 0;
+  }
+  section.section-two .card-two .card-two-part-one, section.section-two .card-two .card-two-part-two, section.section-two .card-two .card-two-part-three {
+    width: 355px;
+    height: 159px;
+  }
+  section.section-two .card-two .card-two-title-box {
+    width: 306px;
+  }
+  section.section-two .card-two .card-two-paragraph-box {
+    width: 311px;
+  }
+  section.section-two .section-two-title-box h3 {
+    color: #FFF;
+    font-family: Commissioner;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px; /* 110% */
   }
 }

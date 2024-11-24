@@ -135,7 +135,7 @@ li{
 section.section-one{
     
     position : relative;
-    // height : 777px;
+    height : 577px;
     background: none;
     
 
@@ -186,4 +186,66 @@ section.section-one{
 //typography---------------------------start
 //typograhy is not needed here because it is the same for mobile and tablet for section one
 //typography---------------------------end
+
+
+//section two------------------------------------start
+//layout--------------------------------------start
+section.section-two{
+    //I used position property because of the overlapping contents
+        border : 1px solid black;
+        background-color: #F94F4F;
+        display : flex;
+        width : 375px;
+        height : 918px;
+        position : relative;
+        // margin-top: -81px;
+        .section-two-title-box{
+           
+            position: absolute;
+            width :327px;
+            height : 120px;
+            left: 24px;
+            top: 96px;
+            z-index : 1;
+        }
+    
+    .card-two{
+        // border : 1px solid blue;
+        position : absolute;
+        width : 375px;
+        height : 653px; // total height - height of the title box(including margins)
+        padding: 0px 24px 0 24px; 
+        top:  265px;
+        left: 0;
+        z-index : 0;
+        //}
+        .card-two-part-one,.card-two-part-two,.card-two-part-three{
+            width : 355px;
+            height : 159px;
+           
+        }
+        // .card-two-part-one,.card-two-part-two{
+        //     margin-bottom: 40px;
+        // }
+        .card-two-title-box{ //for all the title boxes in card two
+            width : 306px;
+        }
+        .card-two-paragraph-box{
+            width : 311px;
+        }
+        
+    }
+}
+//layout------------------------------------end
+//typography-------------------------------start
+section.section-two{
+    .section-two-title-box{
+        h3{
+            @include mixins.section-headings-tablet(#FFF);
+        }
+    }
+   
+}
+//typography---------------------------------end
+//section two------------------------------end
 }
