@@ -2,7 +2,7 @@
 @use '../base/mixins';
 .nav-btn{
     // @include mixins.nav-link-btns(800,800);
-    @include mixins.button($btn-display : inline-block, $btn-width : 199px, $btn-bg-color : #191921 , $btn-height : 64px, $font-size : 16px, $text-color : #fff, $hover-bg : #434356 );
+    @include mixins.button(inline-block,199px, #191921 ,64px,16px,  #fff,  #434356 );
     border : none;
     width : 199px;
     height : 64px;
@@ -13,5 +13,27 @@
    
  }
  .hero-btn{
-    @include mixins.button($btn-display : inline-block, $btn-width : 177px, $btn-bg-color :#F94F4F , $btn-height : 72px, $font-size : 18px, $text-color : #fff, $hover-bg : #FF9393 );
+    @include mixins.button(inline-block, 177px, #F94F4F ,72px, 18px,#fff, #FF9393 );
  }
+ .pair-arrow-btns{
+   // border : 1px solid blue;
+   display : flex;
+   width: 96px;
+   height: 40px;
+   margin : 51px 474px 152px 165px;
+   gap : 16px;
+  
+  
+   .previous-btn:hover{
+      cursor : pointer;
+      circle,path{
+         stroke : #FF9393;
+      }
+   }
+   .next-btn:hover{
+      cursor : pointer;
+      circle,path{
+         stroke : #FF9393;
+      }
+   }
+}

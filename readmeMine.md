@@ -1,3 +1,6 @@
+# For note taking, write down the note and the file name and line number for reference...
+
+
 # things I learned, portfolio notes
 
 1) the use of mixins, nested elements, how to organize sass

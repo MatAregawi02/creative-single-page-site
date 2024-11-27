@@ -155,3 +155,58 @@ section.section-two{
 }
 }
 //section two--------------------------------------end
+
+//section three----------------------------------start
+section.section-three{
+
+    margin-top: 900px;
+    height : 728px;
+    position : relative;
+    .card-three{
+        width : 735px;
+        height : 528px;
+        background-color:#191921;
+        position : absolute;
+        z-index : 1;
+        .card-three-title-box{
+         
+            width : 445px;
+            height : 133px;
+            margin : 152px 125px 0px 165px;
+        }
+       
+    }
+    .image-caption-box{
+      
+        width : 215px;
+        height : 64px;
+        position : absolute;
+        top : 596px;
+        right : 154px;
+        z-index : 4;
+        .caption-title,.caption-text{
+            text-align: right;
+        }
+        
+      
+    }
+    .slide-img-one{
+        width: 895px;
+        height : 728px;
+        position : absolute;
+        left : 545px;
+        z-index : 0;
+    }
+    .white-wavy-image{
+
+        width : 135px;
+        height : 61px;
+        position : absolute;
+        left : 668px;
+        top : 186px;
+        right : 638px;
+        bottom : 482px;
+        z-index : 2;
+    }
+}
+//section three------------------------------------end

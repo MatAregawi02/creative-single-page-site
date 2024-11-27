@@ -110,6 +110,33 @@ section.section-two .section-two-title-box h3 {
   line-height: 32px; /* 177.778% */
 }
 
+section.section-three .card-three h3 {
+  color: #FFF;
+  font-family: Commissioner;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 64px; /* 110% */
+}
+section.section-three .image-caption-box .caption-title {
+  color: #FFF;
+  font-family: Commissioner;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 32px; /* 160% */
+  text-align: right;
+}
+section.section-three .image-caption-box .caption-text {
+  color: #FFF;
+  font-family: Commissioner;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  text-align: right;
+}
+
 header {
   display: flex;
   gap: 409px;
@@ -272,6 +299,52 @@ section.section-two .card-two .card-two-paragraph-box {
   margin-left: 59px;
 }
 
+section.section-three {
+  margin-top: 900px;
+  height: 728px;
+  position: relative;
+}
+section.section-three .card-three {
+  width: 735px;
+  height: 528px;
+  background-color: #191921;
+  position: absolute;
+  z-index: 1;
+}
+section.section-three .card-three .card-three-title-box {
+  width: 445px;
+  height: 133px;
+  margin: 152px 125px 0px 165px;
+}
+section.section-three .image-caption-box {
+  width: 215px;
+  height: 64px;
+  position: absolute;
+  top: 596px;
+  right: 154px;
+  z-index: 4;
+}
+section.section-three .image-caption-box .caption-title, section.section-three .image-caption-box .caption-text {
+  text-align: right;
+}
+section.section-three .slide-img-one {
+  width: 895px;
+  height: 728px;
+  position: absolute;
+  left: 545px;
+  z-index: 0;
+}
+section.section-three .white-wavy-image {
+  width: 135px;
+  height: 61px;
+  position: absolute;
+  left: 668px;
+  top: 186px;
+  right: 638px;
+  bottom: 482px;
+  z-index: 2;
+}
+
 .nav-btn {
   display: inline-block;
   width: 199px;
@@ -309,6 +382,26 @@ section.section-two .card-two .card-two-paragraph-box {
 .hero-btn:hover {
   background-color: #FF9393;
   cursor: pointer;
+}
+
+.pair-arrow-btns {
+  display: flex;
+  width: 96px;
+  height: 40px;
+  margin: 51px 474px 152px 165px;
+  gap: 16px;
+}
+.pair-arrow-btns .previous-btn:hover {
+  cursor: pointer;
+}
+.pair-arrow-btns .previous-btn:hover circle, .pair-arrow-btns .previous-btn:hover path {
+  stroke: #FF9393;
+}
+.pair-arrow-btns .next-btn:hover {
+  cursor: pointer;
+}
+.pair-arrow-btns .next-btn:hover circle, .pair-arrow-btns .next-btn:hover path {
+  stroke: #FF9393;
 }
 
 @media (max-width: 768px) {

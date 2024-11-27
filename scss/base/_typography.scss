@@ -81,6 +81,30 @@ section.section-two{
         @include mixins.all-paragraphs(#FFF,32px);
       
     }
-    
 }
 //section two-----------------------end
+
+//section three-------------------start
+section.section-three{
+    .card-three{
+        h3{
+            @include mixins.section-headings(#FFF);
+        }
+      
+       
+       
+    }
+    .image-caption-box{
+        .caption-title{
+         @include mixins.card-two-titles(20px);
+          text-align: right;
+           
+           
+        }
+        .caption-text{
+            @include mixins.all-paragraphs(#FFF, 32px);
+            text-align: right;
+        }
+    }
+}
+//section three--------------------end
