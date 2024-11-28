@@ -16,9 +16,23 @@ Thus, these two circles can be flexed and the gap between them will be 17px.
 # index.html, line 133 - 145 & buttons.scss, line 18-39
 
 I learned how to work with svgs
--viewbox
--radius
--fill and stroke
--svgs and hover
--how to break a single svg element into two separate svg elements
-* I still need to practice 
+-How to insert them inside an html file,
+-viewbox,
+-radius,
+-fill and stroke,
+-svgs and hover,
+-how to break a single svg element into two separate svg elements,
+I still need to practice 
+---------------------------------------------------------------------------------------
+# section.scss, line 179 - 194
+
+I learned how to include a background styling for a part of a box
+For instance, if we have an image with a caption and the background style should only included for that caption box, we create a big container that will contain the caption and whose background will be styled accordingly.
+
+This particular line of code also give me significant insights into how I can better manipulate css positions and z-indices.
+----------------------------------------------------------------------------------------
+# buttons.scss, line 18 - 34 (updated)
+
+In this case, since the svgs are two separate buttons, it is better to use two svg elements inside a parent container. By using display of flex and specifiying the gap, I was able to replicate the design on figma. The hovering property is also functional.
+
+# the use of rotateY(180deg)

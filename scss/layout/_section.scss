@@ -158,7 +158,10 @@ section.section-two{
 
 //section three----------------------------------start
 section.section-three{
-
+    background-image: url('/assets/desktop/image-slide-1.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 895px 728px;
     margin-top: 900px;
     height : 728px;
     position : relative;
@@ -176,26 +179,31 @@ section.section-three{
         }
        
     }
-    .image-caption-box{
-      
-        width : 215px;
-        height : 64px;
+    .background-inserter-box{
+        width: 895px;
+        height: 200px;
         position : absolute;
-        top : 596px;
-        right : 154px;
-        z-index : 4;
-        .caption-title,.caption-text{
-            text-align: right;
+        top : 528px;
+        left : 545px;
+        z-index : 5;
+        opacity: 0.75;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+
+        .image-caption-box{
+            width : 215px;
+            height : 64px;
+            margin : 68px 154px 68px 525px;
         }
-        
-      
     }
+ 
     .slide-img-one{
+        display : none;
         width: 895px;
         height : 728px;
         position : absolute;
         left : 545px;
         z-index : 0;
+      
     }
     .white-wavy-image{
 

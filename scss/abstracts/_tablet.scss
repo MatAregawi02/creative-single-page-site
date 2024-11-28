@@ -258,4 +258,96 @@ section.section-two{
 }
 //typography----------------------------------end
 //section two------------------------------------end
+
+//section three----------------------------------------------start
+//layout-------------------------------------------start
+section.section-three{
+    background-image: url('/assets/tablet/image-slide-1.jpg');
+    background-size: 438px 472px;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-top: 677px;
+    height : 472px;
+    position : relative;
+    .card-three{
+        width : 390px;
+        height : 352px;
+        background-color:#191921;
+        position : absolute;
+        z-index : 1;
+        .card-three-title-box{
+         
+            width : 281px;
+            height : 80px;
+            margin : 100px 70px 0px 39px;
+        }
+       
+    }
+    .background-inserter-box{
+        width: 438px;
+        height: 130px;
+        position : absolute;
+        top : 345px;
+        left : 330px;
+        z-index : 5;
+        opacity: 0.75;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+
+        .image-caption-box{
+            width : 161px;
+            height : 40px;
+            margin : 45px 40px 45px 236px;
+        }
+    }
+ 
+    .slide-img-one{
+        display : none;
+    }
+    .white-wavy-image{
+
+        width: 62.533px;
+        height: 28.525px;
+        position : absolute;
+        left : 359px;
+        top : 129px;
+        right : 346.47px;
+        bottom : 314.48px;
+        z-index : 2;
+        transform: rotateY(180deg);
+    }
+}
+//buttons--------------start
+.pair-arrow-btns{
+  margin : 32px 255px 100px 39px; //only margin changes
+}
+//buttons--------------end
+//layout-------------------------------------------end
+
+//typography---------------------------------------start
+section.section-three{
+    .card-three{
+        h3{
+            @include mixins.section-headings-tablet(#FFF);
+        }
+      
+       
+       
+    }
+    .image-caption-box{
+        .caption-title{
+         @include mixins.card-two-titles(15px);
+         line-height: 20px;
+          text-align: right;
+           
+           
+        }
+        .caption-text{
+            @include mixins.all-paragraphs(#FFF, 20px);
+            font-size: 15px;
+            text-align: right;
+        }
+    }
+}
+//typography----------------------------------------end
+//section three-----------------------------------------------end
 }

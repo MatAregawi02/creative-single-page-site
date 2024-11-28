@@ -16,24 +16,21 @@
     @include mixins.button(inline-block, 177px, #F94F4F ,72px, 18px,#fff, #FF9393 );
  }
  .pair-arrow-btns{
-   // border : 1px solid blue;
+
    display : flex;
    width: 96px;
    height: 40px;
    margin : 51px 474px 152px 165px;
-   gap : 16px;
+   gap : 17px;
   
-  
-   .previous-btn:hover{
+   
+   .button-left:hover,.button-right:hover{
       cursor : pointer;
       circle,path{
          stroke : #FF9393;
       }
    }
-   .next-btn:hover{
-      cursor : pointer;
-      circle,path{
-         stroke : #FF9393;
-      }
-   }
+ 
 }
+//next time, I will include media query stylings in the same folder 
+//by using variables and such...
