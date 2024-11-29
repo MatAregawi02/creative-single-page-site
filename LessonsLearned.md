@@ -35,4 +35,20 @@ This particular line of code also give me significant insights into how I can be
 
 In this case, since the svgs are two separate buttons, it is better to use two svg elements inside a parent container. By using display of flex and specifiying the gap, I was able to replicate the design on figma. The hovering property is also functional.
 
-# the use of rotateY(180deg)
+however, I am still facing issues when working with svgs. In this case, I noticed that the left and right buttons look very small on the browser than they do on the figma design. Moreover, when I reduce the viewport width to 768px using the browser's responsive device mode, the svgs look bigger and more like those on the design.
+
+
+# I'm starting to think it's the zoom on the browser...
+When I accidentally made the zoom at 100%, svgs looked normal all of a sudden
+if it's at 75% or 50%, the svgs will definitely look smaller
+* this is a significant realization 
+What is going on? (I'll get back to this)
+-------------------------------------------------------------------------------------
+# tablet.scss, line 306 - 316
+I noticed that on tablet version, one of the svgs gets flipped upside down. To do that, I used the transform property.
+transform: rotateY(180deg)
+-------------------------------------------------------------------------------------
+# index.html, line 128 - 154
+
+unfortunately, I have to start over on the third section, because my code did not consider what happens when I have mutiple slides. When working with those, the styling get very complicated. As such, I have to modify my code.
+----------------------------------------------------------------------------------------

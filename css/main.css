@@ -398,7 +398,7 @@ section.section-three .white-wavy-image {
   width: 96px;
   height: 40px;
   margin: 51px 474px 152px 165px;
-  gap: 17px;
+  gap: 16px;
 }
 .pair-arrow-btns .button-left:hover, .pair-arrow-btns .button-right:hover {
   cursor: pointer;
@@ -903,5 +903,44 @@ section.section-three .white-wavy-image {
     font-style: normal;
     font-weight: 800;
     line-height: 40px; /* 110% */
+  }
+  section.section-three {
+    background-image: url("/assets/mobile/image-slide-1.jpg");
+    background-size: 375px 404px;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    background-position-y: 0px;
+    height: 676px;
+    position: relative;
+  }
+  section.section-three .card-three {
+    width: 375px;
+    height: 272px;
+    background-color: #191921;
+    top: 404px;
+    position: absolute;
+    z-index: 1;
+  }
+  section.section-three .card-three .card-three-title-box {
+    width: 327px;
+    height: 80px;
+    margin: 64px 24px 0px 24px;
+  }
+  section.section-three .background-inserter-box {
+    width: 375px;
+    height: 111px;
+    top: 293px;
+    left: 0px;
+  }
+  section.section-three .background-inserter-box .image-caption-box {
+    width: 161px;
+    height: 40px;
+    margin: 36px 32px 35px 181px;
+  }
+  section.section-three .white-wavy-image {
+    display: none;
+  }
+  .pair-arrow-btns {
+    margin: 24px 255px 64px 24px;
   }
 }

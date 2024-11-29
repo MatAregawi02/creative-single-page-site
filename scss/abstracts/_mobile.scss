@@ -248,4 +248,62 @@ section.section-two{
 }
 //typography---------------------------------end
 //section two------------------------------end
+
+//section three----------------------------------------------start
+//layout---------------------------------start
+section.section-three{
+    // background-image: url('/assets/tablet/image-slide-1.jpg'); //I was using tablet img!!!
+    background-image: url('/assets/mobile/image-slide-1.jpg');
+    background-size: 375px 404px;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    background-position-y: 0px;
+    height : 676px;
+    position : relative;
+    .card-three{
+        width : 375px;
+        height : 272px;
+        background-color:#191921;
+        top : 404px;
+        position : absolute;
+        z-index : 1;
+        .card-three-title-box{
+         
+            width : 327px;
+            height : 80px;
+            margin : 64px 24px 0px 24px;
+        }
+       
+    }
+    .background-inserter-box{
+        width: 375px;
+        height: 111px;
+        top : 293px;
+        left : 0px;
+       
+
+        .image-caption-box{
+            width : 161px;
+            height : 40px;
+            margin : 36px 32px 35px 181px;
+        }
+    }
+ 
+    
+    .white-wavy-image{
+        display : none;
+    }
+}
+//buttons--------------start
+.pair-arrow-btns{
+  margin : 24px 255px 64px 24px; //only margin changes
+}
+//buttons---------------end
+//layout---------------------------------end
+//typography----------------------------start
+
+//there are no changes in typography for this section
+
+//typography-----------------------------end
+//section three----------------------------------------------end
 }
