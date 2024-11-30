@@ -13,7 +13,9 @@ body {
   font-family: "Commissioner", sans-serif;
   width: 100%;
   max-width: 1440px;
+  height: auto;
   margin: 0 auto;
+  overflow-x: scroll;
 }
 
 a {
@@ -258,6 +260,7 @@ section.section-one .red-wavy-image {
 }
 
 section.section-two {
+  height: 900px;
   display: flex;
   position: relative;
 }
@@ -267,7 +270,7 @@ section.section-two .section-two-title-box {
   height: 192px;
   left: 165px;
   top: 200px;
-  z-index: 2;
+  z-index: 1;
 }
 section.section-two .card-two {
   background-color: #F94F4F;
@@ -300,27 +303,33 @@ section.section-two .card-two .card-two-paragraph-box {
 }
 
 section.section-three {
-  background-image: url("/assets/desktop/image-slide-1.jpg");
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+}
+section.section-three .all-slides, section.section-three .slide-three, section.section-three .slide-two, section.section-three .slide-one {
+  width: 100%;
   background-repeat: no-repeat;
   background-position: right;
   background-size: 895px 728px;
-  margin-top: 900px;
+  margin-top: 0px;
   height: 728px;
   position: relative;
 }
-section.section-three .card-three {
+section.section-three .all-slides .card-three, section.section-three .slide-three .card-three, section.section-three .slide-two .card-three, section.section-three .slide-one .card-three {
   width: 735px;
   height: 528px;
   background-color: #191921;
   position: absolute;
   z-index: 1;
 }
-section.section-three .card-three .card-three-title-box {
+section.section-three .all-slides .card-three .card-three-title-box, section.section-three .slide-three .card-three .card-three-title-box, section.section-three .slide-two .card-three .card-three-title-box, section.section-three .slide-one .card-three .card-three-title-box {
   width: 445px;
   height: 133px;
   margin: 152px 125px 0px 165px;
 }
-section.section-three .background-inserter-box {
+section.section-three .all-slides .background-inserter-box, section.section-three .slide-three .background-inserter-box, section.section-three .slide-two .background-inserter-box, section.section-three .slide-one .background-inserter-box {
   width: 895px;
   height: 200px;
   position: absolute;
@@ -330,20 +339,12 @@ section.section-three .background-inserter-box {
   opacity: 0.75;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
 }
-section.section-three .background-inserter-box .image-caption-box {
+section.section-three .all-slides .background-inserter-box .image-caption-box, section.section-three .slide-three .background-inserter-box .image-caption-box, section.section-three .slide-two .background-inserter-box .image-caption-box, section.section-three .slide-one .background-inserter-box .image-caption-box {
   width: 215px;
   height: 64px;
   margin: 68px 154px 68px 525px;
 }
-section.section-three .slide-img-one {
-  display: none;
-  width: 895px;
-  height: 728px;
-  position: absolute;
-  left: 545px;
-  z-index: 0;
-}
-section.section-three .white-wavy-image {
+section.section-three .all-slides .white-wavy-image, section.section-three .slide-three .white-wavy-image, section.section-three .slide-two .white-wavy-image, section.section-three .slide-one .white-wavy-image {
   width: 135px;
   height: 61px;
   position: absolute;
@@ -352,6 +353,21 @@ section.section-three .white-wavy-image {
   right: 638px;
   bottom: 482px;
   z-index: 2;
+}
+section.section-three .slide-one {
+  background-image: url("/assets/desktop/image-slide-1.jpg");
+  position: absolute;
+  z-index: 3;
+}
+section.section-three .slide-two {
+  background-image: url("/assets/desktop/image-slide-2.jpg");
+  position: absolute;
+  z-index: 2;
+}
+section.section-three .slide-three {
+  background-image: url("/assets/desktop/image-slide-3.jpg");
+  position: absolute;
+  z-index: 1;
 }
 
 .nav-btn {

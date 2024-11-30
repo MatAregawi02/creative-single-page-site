@@ -107,6 +107,7 @@ section.section-one{
 //section two-------------------------------start
 section.section-two{
 //I used position property because of the overlapping contents
+    height : 900px; //defining height is important to avoid overlap
 
     display : flex;
     position : relative;
@@ -116,7 +117,7 @@ section.section-two{
         height : 192px;
         left: 165px;
         top: 200px;
-        z-index : 2;
+        z-index : 1;
     }
 
 .card-two{
@@ -158,11 +159,25 @@ section.section-two{
 
 //section three----------------------------------start
 section.section-three{
-    background-image: url('/assets/desktop/image-slide-1.jpg');
+    display : flex;
+    flex-direction: column;
+    position : relative;
+    width : auto;
+    // .slider{
+    //     background-color: yellow;
+    //     border : 1px solid brown;
+    //     display: flex;
+    //     width: 300%; /* 100% per slide */
+    //     transition: transform 1s ease;
+    // }
+    .all-slides{
+
+    width : 100%; //this is important to display the background image
+    //background image needs width and height when flexing!!
     background-repeat: no-repeat;
     background-position: right;
     background-size: 895px 728px;
-    margin-top: 900px;
+    margin-top: 0px;
     height : 728px;
     position : relative;
     .card-three{
@@ -180,6 +195,7 @@ section.section-three{
        
     }
     .background-inserter-box{
+        
         width: 895px;
         height: 200px;
         position : absolute;
@@ -195,16 +211,7 @@ section.section-three{
             margin : 68px 154px 68px 525px;
         }
     }
- 
-    .slide-img-one{
-        display : none;
-        width: 895px;
-        height : 728px;
-        position : absolute;
-        left : 545px;
-        z-index : 0;
-      
-    }
+
     .white-wavy-image{
 
         width : 135px;
@@ -217,4 +224,30 @@ section.section-three{
         z-index : 2;
     }
 }
+
+    .slide-one{
+        
+        background-image: url('/assets/desktop/image-slide-1.jpg');
+        @extend .all-slides;
+        position : absolute;
+        z-index : 3;
+    
+    }
+    .slide-two{
+        background-image: url('/assets/desktop/image-slide-2.jpg');
+        @extend .all-slides;
+        position : absolute;
+        z-index : 2;
+    }
+    .slide-three{
+        background-image: url('/assets/desktop/image-slide-3.jpg');
+        @extend .all-slides;
+        position : absolute;
+        z-index : 1;
+    }
+}
+// .hidden{
+//     display : none;
+// }
+
 //section three------------------------------------end

@@ -52,3 +52,10 @@ transform: rotateY(180deg)
 
 unfortunately, I have to start over on the third section, because my code did not consider what happens when I have mutiple slides. When working with those, the styling get very complicated. As such, I have to modify my code.
 ----------------------------------------------------------------------------------------
+
+# section.scss, line 167 - 171
+
+Margin collapsing happens when the parent element has no border, padding or overflow properties set. When we set margin top for the child, that margin is applied to the parent and not the child. We can prevent this by specifying padding, adding a border or setting our overflow value to hidden.
+-----------------------------------------------------------------------------------------
+this is important to display the background image
+background image needs width and height when flexing!!
