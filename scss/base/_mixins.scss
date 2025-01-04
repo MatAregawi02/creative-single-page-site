@@ -1,6 +1,6 @@
 
 //button mixin has too many parameters
-@mixin button($btn-display : inline-block, $btn-width : 140px, $btn-bg-color : #fff , $btn-height : 72px, $font-size : 18px, $text-color : #fff, $hover-bg : #FF9393 ){
+@mixin button($btn-display, $btn-width , $btn-bg-color , $btn-height , $font-size , $text-color, $hover-bg){
     display : $btn-display;
     width : $btn-width;
     height : $btn-height;

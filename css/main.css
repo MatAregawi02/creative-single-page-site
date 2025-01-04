@@ -326,7 +326,6 @@ section.section-three .all-slides .card-three, section.section-three .slide-thre
 }
 section.section-three .all-slides .card-three .card-three-title-box, section.section-three .slide-three .card-three .card-three-title-box, section.section-three .slide-two .card-three .card-three-title-box, section.section-three .slide-one .card-three .card-three-title-box {
   width: 445px;
-  height: 133px;
   margin: 152px 125px 0px 165px;
 }
 section.section-three .all-slides .background-inserter-box, section.section-three .slide-three .background-inserter-box, section.section-three .slide-two .background-inserter-box, section.section-three .slide-one .background-inserter-box {
@@ -576,6 +575,7 @@ section.section-three .slide-three {
     font-size: 15px;
   }
   section.section-two {
+    height: 677px;
     display: flex;
     position: relative;
   }
@@ -642,27 +642,32 @@ section.section-three .slide-three {
     font-size: 15px;
   }
   section.section-three {
-    background-image: url("/assets/tablet/image-slide-1.jpg");
-    background-size: 438px 472px;
+    flex-direction: column;
+    position: relative;
+    width: auto;
+  }
+  section.section-three .all-slides, section.section-three .slide-three, section.section-three .slide-two, section.section-three .slide-one {
+    width: 100%;
     background-repeat: no-repeat;
     background-position: right;
-    margin-top: 677px;
+    background-size: 438px 472px;
+    margin-top: 0px;
     height: 472px;
     position: relative;
   }
-  section.section-three .card-three {
+  section.section-three .all-slides .card-three, section.section-three .slide-three .card-three, section.section-three .slide-two .card-three, section.section-three .slide-one .card-three {
     width: 390px;
     height: 352px;
     background-color: #191921;
     position: absolute;
     z-index: 1;
   }
-  section.section-three .card-three .card-three-title-box {
+  section.section-three .all-slides .card-three .card-three-title-box, section.section-three .slide-three .card-three .card-three-title-box, section.section-three .slide-two .card-three .card-three-title-box, section.section-three .slide-one .card-three .card-three-title-box {
     width: 281px;
-    height: 80px;
     margin: 100px 70px 0px 39px;
   }
-  section.section-three .background-inserter-box {
+  section.section-three .all-slides .background-inserter-box, section.section-three .slide-three .background-inserter-box, section.section-three .slide-two .background-inserter-box, section.section-three .slide-one .background-inserter-box {
+    background-color: yellow;
     width: 438px;
     height: 130px;
     position: absolute;
@@ -672,24 +677,34 @@ section.section-three .slide-three {
     opacity: 0.75;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
   }
-  section.section-three .background-inserter-box .image-caption-box {
+  section.section-three .all-slides .background-inserter-box .image-caption-box, section.section-three .slide-three .background-inserter-box .image-caption-box, section.section-three .slide-two .background-inserter-box .image-caption-box, section.section-three .slide-one .background-inserter-box .image-caption-box {
     width: 161px;
     height: 40px;
     margin: 45px 40px 45px 236px;
   }
-  section.section-three .slide-img-one {
-    display: none;
-  }
-  section.section-three .white-wavy-image {
+  section.section-three .all-slides .white-wavy-image, section.section-three .slide-three .white-wavy-image, section.section-three .slide-two .white-wavy-image, section.section-three .slide-one .white-wavy-image {
     width: 62.533px;
     height: 28.525px;
     position: absolute;
     left: 359px;
     top: 129px;
-    right: 346.47px;
-    bottom: 314.48px;
-    z-index: 2;
     transform: rotateY(180deg);
+    z-index: 2;
+  }
+  section.section-three .slide-one {
+    background-image: url("/assets/desktop/image-slide-1.jpg");
+    position: absolute;
+    z-index: 3;
+  }
+  section.section-three .slide-two {
+    background-image: url("/assets/desktop/image-slide-2.jpg");
+    position: absolute;
+    z-index: 2;
+  }
+  section.section-three .slide-three {
+    background-image: url("/assets/desktop/image-slide-3.jpg");
+    position: absolute;
+    z-index: 1;
   }
   .pair-arrow-btns {
     margin: 32px 255px 100px 39px;
@@ -878,7 +893,6 @@ section.section-three .slide-three {
     bottom: 363px;
   }
   section.section-two {
-    border: 1px solid black;
     background-color: #F94F4F;
     display: flex;
     width: 375px;
@@ -921,40 +935,67 @@ section.section-three .slide-three {
     line-height: 40px; /* 110% */
   }
   section.section-three {
-    background-image: url("/assets/mobile/image-slide-1.jpg");
-    background-size: 375px 404px;
+    width: auto;
+  }
+  section.section-three .all-slides, section.section-three .slide-three, section.section-three .slide-two, section.section-three .slide-one {
+    width: 100%;
     background-repeat: no-repeat;
-    margin-top: 0px;
-    background-position-y: 0px;
-    height: 676px;
+    background-position: center;
+    background-size: 375px 404px;
+    height: 404px;
     position: relative;
   }
-  section.section-three .card-three {
+  section.section-three .all-slides .card-three, section.section-three .slide-three .card-three, section.section-three .slide-two .card-three, section.section-three .slide-one .card-three {
+    margin-top: 404px;
     width: 375px;
     height: 272px;
     background-color: #191921;
-    top: 404px;
     position: absolute;
     z-index: 1;
   }
-  section.section-three .card-three .card-three-title-box {
+  section.section-three .all-slides .card-three .card-three-title-box, section.section-three .slide-three .card-three .card-three-title-box, section.section-three .slide-two .card-three .card-three-title-box, section.section-three .slide-one .card-three .card-three-title-box {
     width: 327px;
-    height: 80px;
-    margin: 64px 24px 0px 24px;
+    margin: 64px 24px 0 24px;
   }
-  section.section-three .background-inserter-box {
+  section.section-three .all-slides .background-inserter-box, section.section-three .slide-three .background-inserter-box, section.section-three .slide-two .background-inserter-box, section.section-three .slide-one .background-inserter-box {
     width: 375px;
     height: 111px;
+    position: absolute;
     top: 293px;
     left: 0px;
+    z-index: 5;
+    opacity: 0.75;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
   }
-  section.section-three .background-inserter-box .image-caption-box {
+  section.section-three .all-slides .background-inserter-box .image-caption-box, section.section-three .slide-three .background-inserter-box .image-caption-box, section.section-three .slide-two .background-inserter-box .image-caption-box, section.section-three .slide-one .background-inserter-box .image-caption-box {
     width: 161px;
     height: 40px;
     margin: 36px 32px 35px 181px;
   }
-  section.section-three .white-wavy-image {
-    display: none;
+  section.section-three .all-slides .white-wavy-image, section.section-three .slide-three .white-wavy-image, section.section-three .slide-two .white-wavy-image, section.section-three .slide-one .white-wavy-image {
+    width: 135px;
+    height: 61px;
+    position: absolute;
+    left: 668px;
+    top: 186px;
+    right: 638px;
+    bottom: 482px;
+    z-index: 2;
+  }
+  section.section-three .slide-one {
+    background-image: url("/assets/mobile/image-slide-1.jpg");
+    position: absolute;
+    z-index: 3;
+  }
+  section.section-three .slide-two {
+    background-image: url("/assets/mobile/image-slide-2.jpg");
+    position: absolute;
+    z-index: 2;
+  }
+  section.section-three .slide-three {
+    background-image: url("/assets/mobile/image-slide-3.jpg");
+    position: absolute;
+    z-index: 1;
   }
   .pair-arrow-btns {
     margin: 24px 255px 64px 24px;

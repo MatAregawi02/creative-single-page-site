@@ -44,7 +44,7 @@ if it's at 75% or 50%, the svgs will definitely look smaller
 * this is a significant realization 
 What is going on? (I'll get back to this)
 -------------------------------------------------------------------------------------
-# tablet.scss, line 306 - 316
+# tablet.scss, line 316 - 323
 I noticed that on tablet version, one of the svgs gets flipped upside down. To do that, I used the transform property.
 transform: rotateY(180deg)
 -------------------------------------------------------------------------------------
@@ -59,3 +59,6 @@ Margin collapsing happens when the parent element has no border, padding or over
 -----------------------------------------------------------------------------------------
 this is important to display the background image
 background image needs width and height when flexing!!
+----------------------------------------------------------------------------------------
+Previously written css code doesn't respond for some reason. My suspicion is that when the scss complies, the desktop css code overrides the css code for tablet or mobile.
+How do we resolve this compilation issue??
