@@ -1,0 +1,30 @@
+@use '../base/variables';
+@use '../base/mixins';
+
+footer{
+    padding : 120px 165px 115px 165px;
+    width : 100%;
+    margin-top: 728px;
+    position : relative;
+    svg{
+        //the svg has already been modified; I just needed to move it to the left
+        position : absolute;
+        left : 0px;
+        top : 154px;
+        bottom : 154px;
+        z-index : 0;
+    }
+    .footer-content{
+        display : flex;
+        align-items: center;
+        gap : 276px;
+        .footer-title-box{
+            width: 635px;
+            height: 133px;
+        }
+        .footer-btn{
+            @include mixins.button(inline-block, 199px, #F94F4F ,64px, 16px,#fff, #FF9393);
+            border : none;
+         }
+    }
+}

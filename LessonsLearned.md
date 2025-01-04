@@ -61,4 +61,7 @@ this is important to display the background image
 background image needs width and height when flexing!!
 ----------------------------------------------------------------------------------------
 Previously written css code doesn't respond for some reason. My suspicion is that when the scss complies, the desktop css code overrides the css code for tablet or mobile.
-How do we resolve this compilation issue??
+How do we resolve this compilation issue?
+----------------------------------------------------------------------------------------
+How do I reduce redundancy??
+How do I streamline the process to make the page responsive?

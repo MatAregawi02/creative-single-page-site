@@ -139,6 +139,15 @@ section.section-three .image-caption-box .caption-text {
   text-align: right;
 }
 
+footer h4 {
+  color: #000;
+  font-family: Commissioner;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 64px; /* 110% */
+}
+
 header {
   display: flex;
   gap: 409px;
@@ -367,6 +376,46 @@ section.section-three .slide-three {
   background-image: url("/assets/desktop/image-slide-3.jpg");
   position: absolute;
   z-index: 1;
+}
+
+footer {
+  padding: 120px 165px 115px 165px;
+  width: 100%;
+  margin-top: 728px;
+  position: relative;
+}
+footer svg {
+  position: absolute;
+  left: 0px;
+  top: 154px;
+  bottom: 154px;
+  z-index: 0;
+}
+footer .footer-content {
+  display: flex;
+  align-items: center;
+  gap: 276px;
+}
+footer .footer-content .footer-title-box {
+  width: 635px;
+  height: 133px;
+}
+footer .footer-content .footer-btn {
+  display: inline-block;
+  width: 199px;
+  height: 64px;
+  color: #fff;
+  background-color: #F94F4F;
+  font-family: Commissioner;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  border: none;
+}
+footer .footer-content .footer-btn:hover {
+  background-color: #FF9393;
+  cursor: pointer;
 }
 
 .nav-btn {

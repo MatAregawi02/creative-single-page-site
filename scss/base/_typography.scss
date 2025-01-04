@@ -108,3 +108,9 @@ section.section-three{
     }
 }
 //section three--------------------end
+footer{
+    h4{
+        @include mixins.section-headings;
+    }
+   
+}

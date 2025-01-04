@@ -13,7 +13,7 @@
    
  }
  .hero-btn{
-    @include mixins.button(inline-block, 177px, #F94F4F ,72px, 18px,#fff, #FF9393 );
+    @include mixins.button(inline-block, 177px, #F94F4F ,72px, 18px,#fff, #FF9393);
  }
  .pair-arrow-btns{
  
@@ -31,8 +31,8 @@
          stroke : #FF9393;
       }
    }
-
-
+   
+   
  
 }
 //next time, I will include media query stylings in the same folder 
