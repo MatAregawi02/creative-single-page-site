@@ -786,6 +786,28 @@ footer .footer-content .footer-btn:hover {
     font-size: 15px;
     text-align: right;
   }
+  footer {
+    padding: 70px 40px 109px 39px;
+    margin-top: 472px;
+  }
+  footer svg {
+    display: none;
+  }
+  footer .footer-content {
+    gap: 92px;
+  }
+  footer .footer-content .footer-title-box {
+    width: 398px;
+    height: 80px;
+  }
+  footer h4 {
+    color: #000;
+    font-family: Commissioner;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px; /* 110% */
+  }
 }
 @media (max-width: 375px) {
   ul {
@@ -884,7 +906,7 @@ footer .footer-content .footer-btn:hover {
   .hero {
     background: none;
     width: 375px;
-    height: 431px;
+    height: auto;
     padding-top: 25px;
     padding-left: 24px;
     padding-right: 24px;
@@ -1048,5 +1070,21 @@ footer .footer-content .footer-btn:hover {
   }
   .pair-arrow-btns {
     margin: 24px 255px 64px 24px;
+  }
+  footer {
+    padding: 100px 152px 100px 24px;
+    width: 100%;
+    margin-top: 676px;
+    position: relative;
+  }
+  footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 47px;
+  }
+  footer .footer-content .footer-title-box {
+    width: 327px;
+    height: auto;
   }
 }

@@ -379,4 +379,30 @@ section.section-three{
 }
 //typography----------------------------------------end
 //section three-----------------------------------------------end
+
+//footer layout--------------------------------------------start
+footer{
+    padding : 70px 40px 109px 39px;
+    margin-top: 472px;
+    svg{
+        display : none;
+    }
+    .footer-content{
+        gap : 92px;
+        .footer-title-box{
+            width: 398px;
+            height: 80px;
+        }
+    }
+}
+//footer layout----------------------------------------------end
+
+//footer typography------------------------------------------start
+footer{
+    h4{
+        @include mixins.section-headings-tablet;
+    }
+   
+}
+//footer typography------------------------------------------end
 }

@@ -101,7 +101,7 @@ li{
     
     background: none;
     width : 375px;
-    height : 431px;
+    height : auto;
     padding-top: 25px;
     padding-left: 24px;
     padding-right: 24px;
@@ -352,4 +352,28 @@ section.section-three{
 //there are no changes in typography for this section
 //typography-----------------------------end
 //section three----------------------------------------------end
+
+
+//footer-----------------------------------------start
+footer{
+    padding : 100px 152px 100px 24px;
+    width : 100%;
+    margin-top: 676px;
+    position : relative;
+    // svg{
+    //    display : none;
+    // }
+    .footer-content{
+        display : flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap : 47px;
+        .footer-title-box{
+            width: 327px;
+            height: auto;
+        }
+    }
+}
+//footer------------------------------------------end
+//no changes in typography in the footer
 }
