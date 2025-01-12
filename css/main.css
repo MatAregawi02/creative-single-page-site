@@ -809,7 +809,7 @@ footer .footer-content .footer-btn:hover {
     line-height: 40px; /* 110% */
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 600px) {
   ul {
     display: none;
     margin-bottom: 0;

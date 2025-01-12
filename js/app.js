@@ -1,6 +1,6 @@
 //let's bring the icons to js
 //this is not my work
-const mediaQueryMobile = window.matchMedia('(max-width : 375px)');
+
 let hamburgerIcon = document.querySelector(".hamburger-icon");
 let crossIcon = document.querySelector(".cross-icon");
 let menu = document.querySelector("ul");

@@ -65,3 +65,5 @@ How do we resolve this compilation issue?
 ----------------------------------------------------------------------------------------
 How do I reduce redundancy??
 How do I streamline the process to make the page responsive?
+-----------------------------------------------------------------------------------------
+Not all components need to change within a certain media query...
